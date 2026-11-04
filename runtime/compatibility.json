@@ -1,0 +1,28 @@
+{
+  "guiVersion": "0.2.0",
+  "acpClientSdk": "2.0.1",
+  "protocol": "ACP v1 + unstable extensions",
+  "testedICodeCommit": null,
+  "testedICodeVersion": null,
+  "sourceInspectedVersion": "0.31.0",
+  "status": "stdio fixture verified; real iCode integration pending",
+  "requiredExtensions": [
+    "_chrys/request_input",
+    "_session/diff"
+  ],
+  "notes": "Source inspection is not runtime compatibility certification. Pin and verify an iCode commit before distribution.",
+  "partialRuntimeChecks": {
+    "version": "0.31.0",
+    "date": "2026-10-24",
+    "passed": [
+      "skills/list",
+      "empty session delete",
+      "profiles/agents/list",
+      "session/switch_agent Code -> QA -> Code",
+      "chrys/session_runtime agent readback",
+      "cross-workspace session discovery and session/list",
+      "session/load real CLI history"
+    ],
+    "modelOrToolExecutionTested": false
+  }
+}
